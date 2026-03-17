@@ -1,0 +1,528 @@
+﻿Analyzing carros...                                             
+
+warning - Unused import: '/backend/api_requests/api_manager.dart' - lib\app_state.dart:3:8 - unused_import
+warning - Unused import: 'backend/supabase/supabase.dart' - lib\app_state.dart:4:8 - unused_import
+warning - Unused import: 'package:shared_preferences/shared_preferences.dart' - lib\app_state.dart:5:8 - unused_import
+   info - Unnecessary use of getter and setter to wrap a field - lib\app_state.dart:29:14 - unnecessary_getters_setters
+   info - The import of 'supabase_user_provider.dart' is unnecessary because all of the used elements are also provided by the import of 'supabase_auth_manager.dart' - lib\auth\supabase_auth\auth_util.dart:3:8 - unnecessary_import
+   info - Don't invoke 'print' in production code - lib\auth\supabase_auth\supabase_auth_manager.dart:23:9 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:28:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:29:28 - use_build_context_synchronously
+warning - The '!' will have no effect because the receiver can't be null - lib\auth\supabase_auth\supabase_auth_manager.dart:30:51 - unnecessary_non_null_assertion
+   info - Don't invoke 'print' in production code - lib\auth\supabase_auth\supabase_auth_manager.dart:42:9 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:47:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:48:28 - use_build_context_synchronously
+warning - The '!' will have no effect because the receiver can't be null - lib\auth\supabase_auth\supabase_auth_manager.dart:49:51 - unnecessary_non_null_assertion
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:53:26 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\auth\supabase_auth\supabase_auth_manager.dart:54:7 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\auth\supabase_auth\supabase_auth_manager.dart:54:25 - prefer_const_constructors
+warning - The method doesn't override an inherited method - lib\auth\supabase_auth\supabase_auth_manager.dart:59:10 - override_on_non_overriding_member
+   info - Don't invoke 'print' in production code - lib\auth\supabase_auth\supabase_auth_manager.dart:65:9 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:70:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:71:28 - use_build_context_synchronously
+warning - The '!' will have no effect because the receiver can't be null - lib\auth\supabase_auth\supabase_auth_manager.dart:72:51 - unnecessary_non_null_assertion
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:76:26 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\auth\supabase_auth\supabase_auth_manager.dart:77:7 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\auth\supabase_auth\supabase_auth_manager.dart:77:25 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:91:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:92:28 - use_build_context_synchronously
+warning - The '!' will have no effect because the receiver can't be null - lib\auth\supabase_auth\supabase_auth_manager.dart:93:51 - unnecessary_non_null_assertion
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:97:26 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\auth\supabase_auth\supabase_auth_manager.dart:98:7 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\auth\supabase_auth\supabase_auth_manager.dart:98:25 - prefer_const_constructors
+warning - The '!' will have no effect because the receiver can't be null - lib\auth\supabase_auth\supabase_auth_manager.dart:146:32 - unnecessary_non_null_assertion
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:147:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\auth\supabase_auth\supabase_auth_manager.dart:148:28 - use_build_context_synchronously
+   info - The member 'loggedIn' overrides an inherited member but isn't annotated with '@override' - lib\auth\supabase_auth\supabase_user_provider.dart:11:12 - annotate_overrides
+   info - Use 'const' with the constructor to improve performance - lib\auth\supabase_auth\supabase_user_provider.dart:72:36 - prefer_const_constructors
+warning - Unused import: 'dart:typed_data' - lib\backend\api_requests\api_calls.dart:2:8 - unused_import
+warning - Unused import: '/flutter_flow/flutter_flow_util.dart' - lib\backend\api_requests\api_calls.dart:5:8 - unused_import
+warning - The declaration '_kPrivateApiFunctionName' isn't referenced - lib\backend\api_requests\api_calls.dart:10:7 - unused_element
+warning - The declaration '_serializeList' isn't referenced - lib\backend\api_requests\api_calls.dart:50:8 - unused_element
+warning - The declaration '_serializeJson' isn't referenced - lib\backend\api_requests\api_calls.dart:62:8 - unused_element
+   info - The import of 'dart:async' is unnecessary because all of the used elements are also provided by the import of 'dart:core' - lib\backend\api_requests\api_manager.dart:3:8 - unnecessary_import
+warning - The library 'package:supabase_flutter/supabase_flutter.dart' doesn't export a member with the hidden name 'Provider' - lib\backend\supabase\database\database.dart:2:62 - undefined_hidden_name
+   info - Use 'TypeName _' instead of a type literal - lib\backend\supabase\database\row.dart:47:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\backend\supabase\database\row.dart:49:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\backend\supabase\database\row.dart:51:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\backend\supabase\database\row.dart:68:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\backend\supabase\database\row.dart:70:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\backend\supabase\database\row.dart:72:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\backend\supabase\database\row.dart:74:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\backend\supabase\database\row.dart:76:10 - type_literal_in_constant_pattern
+   info - Don't invoke 'print' in production code - lib\backend\supabase\database\table.dart:26:30 - avoid_print
+   info - Parameter 'data' could be a super parameter - lib\backend\supabase\database\tables\os.dart:12:3 - use_super_parameters
+   info - Parameter 'data' could be a super parameter - lib\backend\supabase\database\tables\veiculo.dart:12:3 - use_super_parameters
+warning - The library 'package:supabase_flutter/supabase_flutter.dart' doesn't export a member with the hidden name 'Provider' - lib\backend\supabase\supabase.dart:1:62 - undefined_hidden_name
+warning - Unused import: '/flutter_flow/flutter_flow_util.dart' - lib\backend\supabase\supabase.dart:2:8 - unused_import
+   info - Use 'const' with the constructor to improve performance - lib\backend\supabase\supabase.dart:27:13 - prefer_const_constructors
+   info - Function literals shouldn't be passed to 'forEach' - lib\flutter_flow\flutter_flow_animations.dart:40:14 - avoid_function_literals_in_foreach_calls
+   info - Parameters ''delay', 'duration', and 'curve'' could be super parameters - lib\flutter_flow\flutter_flow_animations.dart:78:9 - use_super_parameters
+   info - Parameters ''direction', 'mainAxisSize', 'mainAxisAlignment', 'crossAxisAlignment', and 'verticalDirection'' could be super parameters - lib\flutter_flow\flutter_flow_button_tabbar.dart:15:3 - use_super_parameters
+   info - Constructors in '@immutable' classes should be declared as 'const' - lib\flutter_flow\flutter_flow_button_tabbar.dart:67:3 - prefer_const_constructors_in_immutables
+   info - Parameter 'children' could be a super parameter - lib\flutter_flow\flutter_flow_button_tabbar.dart:67:3 - use_super_parameters
+   info - Parameters ''physics', 'context', and 'oldPosition'' could be super parameters - lib\flutter_flow\flutter_flow_button_tabbar.dart:172:3 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\flutter_flow\flutter_flow_button_tabbar.dart:247:9 - use_super_parameters
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\flutter_flow\flutter_flow_button_tabbar.dart:722:22 - deprecated_member_use
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\flutter_flow\flutter_flow_button_tabbar.dart:726:24 - deprecated_member_use
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\flutter_flow\flutter_flow_button_tabbar.dart:727:20 - deprecated_member_use
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\flutter_flow\flutter_flow_button_tabbar.dart:728:22 - deprecated_member_use
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\flutter_flow\flutter_flow_button_tabbar.dart:729:28 - deprecated_member_use
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\flutter_flow\flutter_flow_button_tabbar.dart:731:18 - deprecated_member_use
+warning - Unused import: 'flutter_flow_util.dart' - lib\flutter_flow\flutter_flow_model.dart:5:8 - unused_import
+   info - Unnecessary use of getter and setter to wrap a field - lib\flutter_flow\flutter_flow_model.dart:54:10 - unnecessary_getters_setters
+   info - Unnecessary return type on a setter - lib\flutter_flow\flutter_flow_model.dart:55:3 - avoid_return_types_on_setters
+   info - Function literals shouldn't be passed to 'forEach' - lib\flutter_flow\flutter_flow_model.dart:133:44 - avoid_function_literals_in_foreach_calls
+   info - Use 'TypeName _' instead of a type literal - lib\flutter_flow\flutter_flow_model.dart:160:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\flutter_flow\flutter_flow_model.dart:162:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\flutter_flow\flutter_flow_model.dart:164:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\flutter_flow\flutter_flow_model.dart:166:10 - type_literal_in_constant_pattern
+warning - Unused import: 'lat_lng.dart' - lib\flutter_flow\flutter_flow_util.dart:15:8 - unused_import
+   info - Use 'TypeName _' instead of a type literal - lib\flutter_flow\flutter_flow_util.dart:165:10 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\flutter_flow\flutter_flow_util.dart:168:10 - type_literal_in_constant_pattern
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\flutter_flow_util.dart:285:24 - prefer_const_constructors
+   info - Use a 'SizedBox' to add whitespace to a layout - lib\flutter_flow\flutter_flow_util.dart:286:22 - sized_box_for_whitespace
+   info - Parameter 'key' could be a super parameter - lib\flutter_flow\keep_alive_wrapper.dart:4:9 - use_super_parameters
+   info - The import of 'package:go_router/go_router.dart' is unnecessary because all of the used elements are also provided by the import of '/flutter_flow/flutter_flow_util.dart' - lib\flutter_flow\nav\nav.dart:4:8 - unnecessary_import
+   info - The import of 'package:page_transition/page_transition.dart' is unnecessary because all of the used elements are also provided by the import of '/flutter_flow/flutter_flow_util.dart' - lib\flutter_flow\nav\nav.dart:5:8 - unnecessary_import
+warning - Unused import: '/flutter_flow/lat_lng.dart' - lib\flutter_flow\nav\nav.dart:13:8 - unused_import
+warning - Unused import: '/flutter_flow/place.dart' - lib\flutter_flow\nav\nav.dart:14:8 - unused_import
+   info - The import of 'serialization_util.dart' is unnecessary because all of the used elements are also provided by the import of '/flutter_flow/flutter_flow_util.dart' - lib\flutter_flow\nav\nav.dart:16:8 - unnecessary_import
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\nav\nav.dart:92:39 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\nav\nav.dart:92:58 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\nav\nav.dart:98:43 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\nav\nav.dart:98:62 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\nav\nav.dart:103:41 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\nav\nav.dart:108:41 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\nav\nav.dart:113:41 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\nav\nav.dart:128:41 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\nav\nav.dart:133:41 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\flutter_flow\nav\nav.dart:379:41 - prefer_const_constructors
+   info - The import of '../../flutter_flow/lat_lng.dart' is unnecessary because all of the used elements are also provided by the import of '/backend/supabase/supabase.dart' - lib\flutter_flow\nav\serialization_util.dart:8:8 - unnecessary_import
+warning - This default clause is covered by the previous cases - lib\flutter_flow\nav\serialization_util.dart:78:7 - unreachable_switch_default
+   info - Don't invoke 'print' in production code - lib\flutter_flow\nav\serialization_util.dart:83:5 - avoid_print
+   info - The constant name 'String' isn't a lowerCamelCase identifier - lib\flutter_flow\nav\serialization_util.dart:144:3 - constant_identifier_names
+   info - The constant name 'DateTime' isn't a lowerCamelCase identifier - lib\flutter_flow\nav\serialization_util.dart:146:3 - constant_identifier_names
+   info - The constant name 'DateTimeRange' isn't a lowerCamelCase identifier - lib\flutter_flow\nav\serialization_util.dart:147:3 - constant_identifier_names
+   info - The constant name 'LatLng' isn't a lowerCamelCase identifier - lib\flutter_flow\nav\serialization_util.dart:148:3 - constant_identifier_names
+   info - The constant name 'Color' isn't a lowerCamelCase identifier - lib\flutter_flow\nav\serialization_util.dart:149:3 - constant_identifier_names
+   info - The constant name 'FFPlace' isn't a lowerCamelCase identifier - lib\flutter_flow\nav\serialization_util.dart:150:3 - constant_identifier_names
+   info - The constant name 'FFUploadedFile' isn't a lowerCamelCase identifier - lib\flutter_flow\nav\serialization_util.dart:151:3 - constant_identifier_names
+   info - The constant name 'JSON' isn't a lowerCamelCase identifier - lib\flutter_flow\nav\serialization_util.dart:152:3 - constant_identifier_names
+   info - The constant name 'SupabaseRow' isn't a lowerCamelCase identifier - lib\flutter_flow\nav\serialization_util.dart:154:3 - constant_identifier_names
+   info - Use 'whereType' to select elements of a given type - lib\flutter_flow\nav\serialization_util.dart:172:12 - prefer_iterable_wheretype
+   info - Use 'TypeName _' instead of a type literal - lib\flutter_flow\nav\serialization_util.dart:209:16 - type_literal_in_constant_pattern
+warning - This default clause is covered by the previous cases - lib\flutter_flow\nav\serialization_util.dart:215:7 - unreachable_switch_default
+   info - Don't invoke 'print' in production code - lib\flutter_flow\nav\serialization_util.dart:219:5 - avoid_print
+warning - Unused import: '/auth/supabase_auth/auth_util.dart' - lib\login_page\login_page_model.dart:1:8 - unused_import
+warning - Unused import: '/flutter_flow/flutter_flow_animations.dart' - lib\login_page\login_page_model.dart:2:8 - unused_import
+warning - Unused import: '/flutter_flow/flutter_flow_theme.dart' - lib\login_page\login_page_model.dart:3:8 - unused_import
+warning - Unused import: '/flutter_flow/flutter_flow_widgets.dart' - lib\login_page\login_page_model.dart:5:8 - unused_import
+warning - Unused import: 'dart:math' - lib\login_page\login_page_model.dart:6:8 - unused_import
+warning - Unused import: 'dart:ui' - lib\login_page\login_page_model.dart:7:8 - unused_import
+warning - Unused import: 'package:cached_network_image/cached_network_image.dart' - lib\login_page\login_page_model.dart:9:8 - unused_import
+warning - Unused import: 'package:flutter/scheduler.dart' - lib\login_page\login_page_model.dart:11:8 - unused_import
+warning - Unused import: 'package:flutter_animate/flutter_animate.dart' - lib\login_page\login_page_model.dart:12:8 - unused_import
+warning - Unused import: 'package:google_fonts/google_fonts.dart' - lib\login_page\login_page_model.dart:13:8 - unused_import
+warning - Unused import: 'package:provider/provider.dart' - lib\login_page\login_page_model.dart:14:8 - unused_import
+warning - Unused import: 'dart:math' - lib\login_page\login_page_widget.dart:6:8 - unused_import
+   info - The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\login_page\login_page_widget.dart:7:8 - unnecessary_import
+warning - Unused import: 'package:flutter/scheduler.dart' - lib\login_page\login_page_widget.dart:10:8 - unused_import
+warning - Unused import: 'package:provider/provider.dart' - lib\login_page\login_page_widget.dart:13:8 - unused_import
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:68:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:69:18 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:75:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:76:18 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:110:31 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:113:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:124:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:136:36 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:140:42 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:143:41 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:145:45 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:146:45 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:147:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:148:42 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:149:43 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:152:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:158:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:161:39 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:165:38 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:170:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:173:49 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:174:59 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:175:51 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:186:50 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:206:54 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:215:53 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:217:46 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\login_page\login_page_widget.dart:219:43 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:220:39 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:236:45 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:239:47 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:247:58 - prefer_const_constructors
+   info - Use a 'SizedBox' to add whitespace to a layout - lib\login_page\login_page_widget.dart:251:56 - sized_box_for_whitespace
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\login_page\login_page_widget.dart:259:68 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:280:72 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:295:69 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:297:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:306:69 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:308:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:317:69 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:319:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:328:69 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:330:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:340:59 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:357:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:371:57 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:379:58 - prefer_const_constructors
+   info - Use a 'SizedBox' to add whitespace to a layout - lib\login_page\login_page_widget.dart:382:56 - sized_box_for_whitespace
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\login_page\login_page_widget.dart:390:68 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:412:72 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:427:69 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:429:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:438:69 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:440:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:449:69 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:451:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:460:69 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:462:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:472:59 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:491:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:511:63 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:523:57 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:531:60 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:534:60 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\login_page\login_page_widget.dart:557:55 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:567:59 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:574:59 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:580:62 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:610:67 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:623:60 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:626:60 - prefer_const_constructors
+   info - Don't invoke 'print' in production code - lib\login_page\login_page_widget.dart:631:55 - avoid_print
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:639:59 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:646:59 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:668:72 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:682:67 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:722:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\login_page\login_page_widget.dart:724:32 - prefer_const_constructors
+warning - Unused import: 'package:flutter/gestures.dart' - lib\main.dart:2:8 - unused_import
+warning - Unused import: 'package:flutter_web_plugins/url_strategy.dart' - lib\main.dart:6:8 - unused_import
+   info - The import of 'flutter_flow/nav/nav.dart' is unnecessary because all of the used elements are also provided by the import of 'flutter_flow/flutter_flow_util.dart' - lib\main.dart:14:8 - unnecessary_import
+   info - Constructors for public widgets should have a named 'key' parameter - lib\main.dart:33:7 - use_key_in_widget_constructors
+   info - Invalid use of a private type in a public API - lib\main.dart:38:10 - library_private_types_in_public_api
+warning - The value of the field '_themeMode' isn't used - lib\main.dart:43:13 - unused_field
+   info - Use 'const' with the constructor to improve performance - lib\main.dart:74:7 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\main.dart:89:31 - prefer_const_literals_to_create_immutables
+warning - Unused import: '/flutter_flow/flutter_flow_theme.dart' - lib\pages\home_page\home_page_model.dart:1:8 - unused_import
+warning - Unused import: '/flutter_flow/flutter_flow_widgets.dart' - lib\pages\home_page\home_page_model.dart:3:8 - unused_import
+warning - Unused import: 'dart:ui' - lib\pages\home_page\home_page_model.dart:4:8 - unused_import
+warning - Unused import: 'package:google_fonts/google_fonts.dart' - lib\pages\home_page\home_page_model.dart:7:8 - unused_import
+warning - Unused import: 'package:provider/provider.dart' - lib\pages\home_page\home_page_model.dart:8:8 - unused_import
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:84:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:85:23 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\home_page\home_page_widget.dart:86:23 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:87:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:88:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\home_page\home_page_widget.dart:90:22 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:91:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:92:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:99:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:122:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:125:33 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:126:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:127:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:128:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:129:38 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:130:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:131:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:135:32 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:137:29 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:138:38 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:139:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:152:54 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:157:39 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:161:54 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:168:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:175:54 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:180:39 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:184:54 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:191:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:195:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:197:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:212:41 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:233:47 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:254:68 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:262:72 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:268:72 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\home_page\home_page_widget.dart:307:18 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:308:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:309:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:312:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:313:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:316:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:317:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:320:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:321:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:340:16 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\home_page\home_page_widget.dart:344:20 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:345:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:347:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:348:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:360:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:371:11 - prefer_const_constructors
+   info - Use 'const' for final variables initialized to a constant value - lib\pages\home_page\home_page_widget.dart:393:5 - prefer_const_declarations
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:405:27 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:406:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:407:25 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:408:27 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:409:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page\home_page_widget.dart:413:9 - prefer_const_constructors
+   info - The import of 'package:flutter/services.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:6:8 - unnecessary_import
+   info - The import of 'package:intl/intl.dart' is unnecessary because all of the used elements are also provided by the import of '/flutter_flow/flutter_flow_util.dart' - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:7:8 - unnecessary_import
+  error - The getter 'mecanicoResponsavelController' isn't defined for the type 'OrdemServicoCadastroPageModel' - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:62:12 - undefined_getter
+  error - The setter 'mecanicoResponsavelController' isn't defined for the type 'OrdemServicoCadastroPageModel' - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:62:12 - undefined_setter
+  error - The getter 'mecanicoResponsavelFocusNode' isn't defined for the type 'OrdemServicoCadastroPageModel' - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:63:12 - undefined_getter
+  error - The setter 'mecanicoResponsavelFocusNode' isn't defined for the type 'OrdemServicoCadastroPageModel' - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:63:12 - undefined_setter
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:140:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:141:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:144:26 - prefer_const_constructors
+   info - 'dialogBackgroundColor' is deprecated and shouldn't be used. Use DialogThemeData.backgroundColor instead. This feature was deprecated after v3.27.0-0.1.pre - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:146:13 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:172:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:173:22 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:230:28 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:231:9 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:232:20 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:236:7 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:238:28 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:264:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:265:23 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:266:23 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:267:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:268:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:270:22 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:271:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:272:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:279:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:284:29 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:294:29 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:316:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:321:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:322:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:323:38 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:324:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:325:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:330:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:464:51 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:474:51 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:512:42 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:514:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:516:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:526:45 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:562:20 - prefer_const_constructors
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:566:13 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:567:25 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:569:31 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:571:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:619:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:625:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:652:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:654:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:688:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:690:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:739:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:741:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:788:20 - prefer_const_constructors
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:792:13 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:793:25 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_cadastro_page_widget.dart:796:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:47:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:49:18 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:58:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:59:23 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\ordem_servico\ordem_servico_page_widget.dart:60:23 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:61:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:62:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\ordem_servico\ordem_servico_page_widget.dart:64:22 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:65:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:66:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:73:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:96:26 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\ordem_servico\ordem_servico_page_widget.dart:101:32 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:102:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:104:32 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:105:33 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:112:25 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:164:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:169:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:170:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:171:38 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:172:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:173:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:178:27 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:205:36 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:206:38 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:230:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:235:50 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:239:50 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:239:73 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\pages\ordem_servico\ordem_servico_page_widget.dart:249:58 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:250:39 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:251:50 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\ordem_servico\ordem_servico_page_widget.dart:260:48 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:261:39 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:263:48 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:264:49 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:269:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:282:52 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:286:50 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:288:52 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:315:60 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:336:60 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:340:62 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\ordem_servico\ordem_servico_page_widget.dart:402:18 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:403:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:404:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:407:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:408:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:411:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:412:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:415:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:416:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:432:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:434:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:436:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\ordem_servico\ordem_servico_page_widget.dart:439:16 - prefer_const_constructors
+   info - The import of 'dart:typed_data' is unnecessary because all of the used elements are also provided by the import of '/flutter_flow/flutter_flow_util.dart' - lib\pages\perfil\perfil_page_widget.dart:1:8 - unnecessary_import
+   info - Unnecessary braces in a string interpolation - lib\pages\perfil\perfil_page_widget.dart:37:32 - unnecessary_brace_in_string_interps
+   info - Unnecessary braces in a string interpolation - lib\pages\perfil\perfil_page_widget.dart:48:32 - unnecessary_brace_in_string_interps
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:63:14 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:64:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:64:50 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:80:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:90:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:96:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:99:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:101:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:125:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:146:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:147:23 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\perfil\perfil_page_widget.dart:148:23 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:149:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:150:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\perfil\perfil_page_widget.dart:152:22 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:153:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:154:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:161:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:185:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:190:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:191:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:192:38 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:193:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:194:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:198:32 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:211:44 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:214:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:219:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:234:55 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:237:60 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:240:49 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:243:58 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:252:44 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:259:42 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:269:38 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:281:38 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\pages\perfil\perfil_page_widget.dart:285:50 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\pages\perfil\perfil_page_widget.dart:286:35 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\pages\perfil\perfil_page_widget.dart:288:33 - use_build_context_synchronously
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\perfil\perfil_page_widget.dart:294:46 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:295:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:297:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:298:47 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:303:44 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:313:39 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:318:39 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\perfil\perfil_page_widget.dart:358:18 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:359:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:360:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:363:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:364:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:367:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:368:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:371:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\perfil\perfil_page_widget.dart:372:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:81:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:82:23 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:83:23 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:84:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:85:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:87:22 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:88:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:89:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:96:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:101:29 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:111:29 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:133:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:138:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:139:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:140:38 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:141:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:142:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:147:34 - prefer_const_constructors
+   info - Use interpolation to compose strings and values - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:254:129 - prefer_interpolation_to_compose_strings
+   info - Don't use 'BuildContext's across async gaps - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:295:56 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:303:35 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:305:56 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:323:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:333:45 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:399:27 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:400:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculo_cadastro_page_widget.dart:422:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:47:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:49:18 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:58:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:59:23 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\veiculos\veiculos_page_widget.dart:60:23 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:61:17 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:62:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\veiculos\veiculos_page_widget.dart:64:22 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:65:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:66:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:73:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:96:26 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\veiculos\veiculos_page_widget.dart:101:32 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:102:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:104:32 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:105:33 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:112:25 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:164:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:169:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:170:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:171:38 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:172:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:173:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:178:27 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:206:36 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:207:38 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\veiculos\veiculos_page_widget.dart:221:46 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:222:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:224:46 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:225:47 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:230:44 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:243:50 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:247:48 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:249:50 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:276:58 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:295:58 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\pages\veiculos\veiculos_page_widget.dart:388:62 - use_build_context_synchronously
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\veiculos\veiculos_page_widget.dart:449:18 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:450:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:451:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:454:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:455:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:458:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:459:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:462:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\veiculos\veiculos_page_widget.dart:463:21 - prefer_const_constructors
+
