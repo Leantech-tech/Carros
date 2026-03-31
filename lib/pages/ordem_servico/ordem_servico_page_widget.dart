@@ -479,6 +479,8 @@ class _OrdemServicoPageWidgetState extends State<OrdemServicoPageWidget> {
             } else if (index == 2) {
               context.pushNamed('VeiculosPage');
             } else if (index == 3) {
+              context.pushNamed('CarrosPage');
+            } else if (index == 4) {
               context.pushNamed('PerfilPage');
             }
           },
@@ -495,6 +497,10 @@ class _OrdemServicoPageWidgetState extends State<OrdemServicoPageWidget> {
             BottomNavigationBarItem(
               icon: Icon(Icons.directions_car),
               label: 'Veículos',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.airport_shuttle),
+              label: 'Carros',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),

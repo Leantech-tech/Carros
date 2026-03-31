@@ -217,6 +217,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             } else if (index == 2) {
               context.pushNamed('VeiculosPage');
             } else if (index == 3) {
+              context.pushNamed('CarrosPage');
+            } else if (index == 4) {
               context.pushNamed('PerfilPage');
             }
           },
@@ -233,6 +235,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             BottomNavigationBarItem(
               icon: Icon(Icons.directions_car),
               label: 'Veículos',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.airport_shuttle),
+              label: 'Carros',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),

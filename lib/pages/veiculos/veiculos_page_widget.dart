@@ -424,6 +424,8 @@ class _VeiculosPageWidgetState extends State<VeiculosPageWidget> {
             } else if (index == 1) {
               context.pushNamed('OrdemServicoPage');
             } else if (index == 3) {
+              context.pushNamed('CarrosPage');
+            } else if (index == 4) {
               context.pushNamed('PerfilPage');
             }
           },
@@ -440,6 +442,10 @@ class _VeiculosPageWidgetState extends State<VeiculosPageWidget> {
             BottomNavigationBarItem(
               icon: Icon(Icons.directions_car),
               label: 'Veículos',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.airport_shuttle),
+              label: 'Carros',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),

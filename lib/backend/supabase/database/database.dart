@@ -7,3 +7,4 @@ export 'table.dart';
 
 export 'tables/veiculo.dart';
 export 'tables/os.dart';
+export 'tables/carro.dart';

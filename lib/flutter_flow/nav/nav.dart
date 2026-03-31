@@ -22,6 +22,8 @@ import '/pages/veiculos/veiculo_cadastro_page_widget.dart';
 import '/pages/perfil/perfil_page_widget.dart';
 import '/pages/ordem_servico/ordem_servico_page_widget.dart';
 import '/pages/ordem_servico/ordem_servico_cadastro_page_widget.dart';
+import '/pages/carros/carros_page_widget.dart';
+import '/pages/carros/carro_cadastro_page_widget.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -138,6 +140,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => OrdemServicoCadastroPageWidget(
             ordemServico: params.getParam<OsRow>(
               'ordemServico',
+              ParamType.SupabaseRow,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: CarrosPageWidget.routeName,
+          path: CarrosPageWidget.routePath,
+          builder: (context, params) => CarrosPageWidget(),
+        ),
+        FFRoute(
+          name: CarroCadastroPageWidget.routeName,
+          path: CarroCadastroPageWidget.routePath,
+          builder: (context, params) => CarroCadastroPageWidget(
+            carro: params.getParam<CarroRow>(
+              'carro',
               ParamType.SupabaseRow,
             ),
           ),
