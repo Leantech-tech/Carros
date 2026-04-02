@@ -20,10 +20,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  int _totalVeiculos = 0;
-  int _totalOS = 0;
-  int _osEmAndamento = 0;
-  int _osConcluidas = 0;
+  int _totalCarros = 0;
   bool _isLoading = true;
 
   @override
@@ -35,27 +32,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
 
   Future<void> _loadStats() async {
     try {
-      // Load vehicles
-      final veiculos = await VeiculoTable().queryRows(queryFn: (q) => q);
-      
-      // Load OS
-      final ordensServico = await OsTable().queryRows(queryFn: (q) => q);
+      final carros = await CarroTable().queryRows(queryFn: (q) => q);
 
       setState(() {
-        _totalVeiculos = veiculos.length;
-        _totalOS = ordensServico.length;
-        
-        // Count OS by status
-        _osEmAndamento = ordensServico.where((os) {
-          final status = os.status?.toLowerCase() ?? '';
-          return status == 'em andamento' || status == 'pendente';
-        }).length;
-        
-        _osConcluidas = ordensServico.where((os) {
-          final status = os.status?.toLowerCase() ?? '';
-          return status == 'concluído' || status == 'concluido';
-        }).length;
-        
+        _totalCarros = carros.length;
         _isLoading = false;
       });
     } catch (e) {
@@ -154,47 +134,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  // First row of cards
                                   Row(
                                     children: [
                                       Expanded(
                                         child: _buildStatCard(
-                                          icon: Icons.directions_car_rounded,
-                                          iconColor: Color(0xFF3B82F6),
-                                          value: _totalVeiculos.toString(),
-                                          label: 'Total de Veículos',
-                                        ),
-                                      ),
-                                      SizedBox(width: 12.0),
-                                      Expanded(
-                                        child: _buildStatCard(
-                                          icon: Icons.pending_actions_rounded,
-                                          iconColor: Color(0xFFF59E0B),
-                                          value: _osEmAndamento.toString(),
-                                          label: 'OS Em Andamento',
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(height: 12.0),
-                                  // Second row of cards
-                                  Row(
-                                    children: [
-                                      Expanded(
-                                        child: _buildStatCard(
-                                          icon: Icons.check_circle_rounded,
-                                          iconColor: Color(0xFF10B981),
-                                          value: _osConcluidas.toString(),
-                                          label: 'OS Concluídas',
-                                        ),
-                                      ),
-                                      SizedBox(width: 12.0),
-                                      Expanded(
-                                        child: _buildStatCard(
-                                          icon: Icons.assignment_rounded,
-                                          iconColor: Color(0xFF8B5CF6),
-                                          value: _totalOS.toString(),
-                                          label: 'Total de OS',
+                                          icon: Icons.airport_shuttle,
+                                          iconColor: FlutterFlowTheme.of(context).primary,
+                                          value: _totalCarros.toString(),
+                                          label: 'Total de Carros',
                                         ),
                                       ),
                                     ],
@@ -213,12 +160,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           currentIndex: 0,
           onTap: (index) {
             if (index == 1) {
-              context.pushNamed('OrdemServicoPage');
-            } else if (index == 2) {
-              context.pushNamed('VeiculosPage');
-            } else if (index == 3) {
               context.pushNamed('CarrosPage');
-            } else if (index == 4) {
+            } else if (index == 2) {
               context.pushNamed('PerfilPage');
             }
           },
@@ -227,14 +170,6 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             BottomNavigationBarItem(
               icon: Icon(Icons.dashboard_rounded),
               label: 'Dashboard',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.assignment_rounded),
-              label: 'OS',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.directions_car),
-              label: 'Veículos',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.airport_shuttle),

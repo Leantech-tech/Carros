@@ -17,11 +17,7 @@ import 'serialization_util.dart';
 
 import '/pages/home_page/home_page_widget.dart';
 import '/login_page/login_page_widget.dart';
-import '/pages/veiculos/veiculos_page_widget.dart';
-import '/pages/veiculos/veiculo_cadastro_page_widget.dart';
 import '/pages/perfil/perfil_page_widget.dart';
-import '/pages/ordem_servico/ordem_servico_page_widget.dart';
-import '/pages/ordem_servico/ordem_servico_cadastro_page_widget.dart';
 import '/pages/carros/carros_page_widget.dart';
 import '/pages/carros/carro_cadastro_page_widget.dart';
 
@@ -86,7 +82,7 @@ class AppStateNotifier extends ChangeNotifier {
 }
 
 GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
-      initialLocation: '/loginPage',
+      initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
@@ -108,41 +104,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: LoginPageWidget.routeName,
           path: LoginPageWidget.routePath,
           builder: (context, params) => LoginPageWidget(),
-        ),
-        FFRoute(
-          name: VeiculosPageWidget.routeName,
-          path: VeiculosPageWidget.routePath,
-          builder: (context, params) => VeiculosPageWidget(),
-        ),
-        FFRoute(
-          name: VeiculoCadastroPageWidget.routeName,
-          path: VeiculoCadastroPageWidget.routePath,
-          builder: (context, params) => VeiculoCadastroPageWidget(
-            veiculo: params.getParam<VeiculoRow>(
-              'veiculo',
-              ParamType.SupabaseRow,
-            ),
-          ),
+          redirect: (context, state) =>
+              appStateNotifier.loggedIn ? '/' : null,
         ),
         FFRoute(
           name: PerfilPageWidget.routeName,
           path: PerfilPageWidget.routePath,
           builder: (context, params) => PerfilPageWidget(),
-        ),
-        FFRoute(
-          name: OrdemServicoPageWidget.routeName,
-          path: OrdemServicoPageWidget.routePath,
-          builder: (context, params) => OrdemServicoPageWidget(),
-        ),
-        FFRoute(
-          name: OrdemServicoCadastroPageWidget.routeName,
-          path: OrdemServicoCadastroPageWidget.routePath,
-          builder: (context, params) => OrdemServicoCadastroPageWidget(
-            ordemServico: params.getParam<OsRow>(
-              'ordemServico',
-              ParamType.SupabaseRow,
-            ),
-          ),
         ),
         FFRoute(
           name: CarrosPageWidget.routeName,
@@ -305,6 +273,7 @@ class FFRoute {
     this.requireAuth = false,
     this.asyncParams = const {},
     this.routes = const [],
+    this.redirect,
   });
 
   final String name;
@@ -313,6 +282,7 @@ class FFRoute {
   final Map<String, Future<dynamic> Function(String)> asyncParams;
   final Widget Function(BuildContext, FFParameters) builder;
   final List<GoRoute> routes;
+  final String? Function(BuildContext, GoRouterState)? redirect;
 
   GoRoute toRoute(AppStateNotifier appStateNotifier) => GoRoute(
         name: name,
@@ -322,6 +292,11 @@ class FFRoute {
             final redirectLocation = appStateNotifier.getRedirectLocation();
             appStateNotifier.clearRedirectLocation();
             return redirectLocation;
+          }
+
+          if (redirect != null) {
+            final resp = redirect!(context, state);
+            if (resp != null) return resp;
           }
 
           if (requireAuth && !appStateNotifier.loggedIn) {

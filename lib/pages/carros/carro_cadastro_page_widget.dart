@@ -83,7 +83,7 @@ class _CarroCadastroPageWidgetState extends State<CarroCadastroPageWidget> {
                   children: [
                     IconButton(
                       icon: Icon(
-                        Icons.close_rounded,
+                        Icons.close,
                         color: FlutterFlowTheme.of(context).primaryText,
                         size: 24.0,
                       ),
@@ -97,7 +97,7 @@ class _CarroCadastroPageWidgetState extends State<CarroCadastroPageWidget> {
                     ),
                     IconButton(
                       icon: Icon(
-                        Icons.check_rounded,
+                        Icons.check,
                         color: FlutterFlowTheme.of(context).primaryText,
                         size: 28.0,
                       ),

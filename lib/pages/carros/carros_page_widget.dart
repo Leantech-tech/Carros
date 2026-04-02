@@ -179,7 +179,7 @@ class _CarrosPageWidgetState extends State<CarrosPageWidget> {
               ),
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
@@ -201,10 +201,10 @@ class _CarrosPageWidgetState extends State<CarrosPageWidget> {
                         ),
                         child: Padding(
                           padding:
-                              EdgeInsetsDirectional.fromSTEB(24.0, 20.0, 24.0, 0.0),
+                              EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                           child: FutureBuilder<List<CarroRow>>(
                             future: CarroTable().queryRows(
-                              queryFn: (q) => q.order('data', ascending: false).limit(200),
+                              queryFn: (q) => q.order('data', ascending: false),
                             ),
                             builder: (context, snapshot) {
                               if (!snapshot.hasData) {
@@ -237,40 +237,56 @@ class _CarrosPageWidgetState extends State<CarrosPageWidget> {
                                 builder: (context, constraints) {
                                   return SingleChildScrollView(
                                     scrollDirection: Axis.vertical,
-                                    child: SingleChildScrollView(
-                                      scrollDirection: Axis.horizontal,
-                                      child: ConstrainedBox(
-                                        constraints: BoxConstraints(minWidth: constraints.minWidth),
-                                        child: DataTable(
-                                          showCheckboxColumn: false,
-                                          headingRowColor: MaterialStateProperty.all(
-                                              FlutterFlowTheme.of(context).secondaryBackground),
-                                          columns: const [
-                                            DataColumn(label: Text('Nome do Veículo')),
-                                            DataColumn(label: Text('Data')),
-                                            DataColumn(label: Text('Contato')),
-                                          ],
-                                          rows: carros.map((carro) {
-                                            return DataRow(
-                                              onSelectChanged: (selected) {
-                                                if (selected == true) {
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                                      children: [
+                                        ConstrainedBox(
+                                          constraints: BoxConstraints(minWidth: constraints.maxWidth),
+                                          child: Theme(
+                                            data: Theme.of(context).copyWith(
+                                              cardColor: Colors.white,
+                                              dividerColor: Colors.transparent,
+                                            ),
+                                            child: PaginatedDataTable(
+                                              header: null,
+                                              rowsPerPage: carros.length > 10 ? 10 : (carros.isEmpty ? 1 : carros.length),
+                                              availableRowsPerPage: const [10, 25, 50, 100],
+                                              showCheckboxColumn: false,
+                                              columnSpacing: 20,
+                                              horizontalMargin: 12,
+                                              columns: const [
+                                                DataColumn(label: Text('Nome do Veículo')),
+                                                DataColumn(label: Text('Data')),
+                                                DataColumn(label: Text('Contato')),
+                                              ],
+                                              source: CarrosTableSource(
+                                                carros: carros,
+                                                context: context,
+                                                onSelect: (carro) {
                                                   setState(() {
                                                     _selectedCarro = carro;
                                                   });
                                                   WidgetsBinding.instance.addPostFrameCallback((_) {
                                                     scaffoldKey.currentState?.openEndDrawer();
                                                   });
-                                                }
-                                              },
-                                              cells: [
-                                                DataCell(Text(carro.nomeVeiculo)),
-                                                DataCell(Text(DateFormat('dd/MM/yyyy').format(carro.dataServico))),
-                                                DataCell(Text(carro.getField<String>('contato') ?? 'N/A')),
-                                              ],
-                                            );
-                                          }).toList(),
+                                                },
+                                              ),
+                                            ),
+                                          ),
                                         ),
-                                      ),
+                                        Padding(
+                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 20.0),
+                                          child: Text(
+                                            'Total de registros: ${carros.length}',
+                                            textAlign: TextAlign.end,
+                                            style: FlutterFlowTheme.of(context).bodySmall.override(
+                                              fontFamily: 'Inter',
+                                              color: FlutterFlowTheme.of(context).secondaryText,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   );
                                 },
@@ -287,15 +303,11 @@ class _CarrosPageWidgetState extends State<CarrosPageWidget> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: 3,
+          currentIndex: 1,
           onTap: (index) {
             if (index == 0) {
               context.pushNamed('HomePage');
-            } else if (index == 1) {
-              context.pushNamed('OrdemServicoPage');
             } else if (index == 2) {
-              context.pushNamed('VeiculosPage');
-            } else if (index == 4) {
               context.pushNamed('PerfilPage');
             }
           },
@@ -306,15 +318,7 @@ class _CarrosPageWidgetState extends State<CarrosPageWidget> {
               label: 'Dashboard',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.assignment_rounded),
-              label: 'OS',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.directions_car),
-              label: 'Veículos',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.airport_shuttle),
+              icon: Icon(Icons.directions_car_filled),
               label: 'Carros',
             ),
             BottomNavigationBarItem(
@@ -329,4 +333,44 @@ class _CarrosPageWidgetState extends State<CarrosPageWidget> {
       ),
     );
   }
+}
+
+class CarrosTableSource extends DataTableSource {
+  final List<CarroRow> carros;
+  final BuildContext context;
+  final Function(CarroRow) onSelect;
+
+  CarrosTableSource({
+    required this.carros,
+    required this.context,
+    required this.onSelect,
+  });
+
+  @override
+  DataRow? getRow(int index) {
+    if (index >= carros.length) return null;
+    final carro = carros[index];
+    return DataRow.byIndex(
+      index: index,
+      onSelectChanged: (selected) {
+        if (selected == true) {
+          onSelect(carro);
+        }
+      },
+      cells: [
+        DataCell(Text(carro.nomeVeiculo)),
+        DataCell(Text(DateFormat('dd/MM/yyyy').format(carro.dataServico))),
+        DataCell(Text(carro.getField<String>('contato') ?? 'N/A')),
+      ],
+    );
+  }
+
+  @override
+  bool get isRowCountApproximate => false;
+
+  @override
+  int get rowCount => carros.length;
+
+  @override
+  int get selectedRowCount => 0;
 }

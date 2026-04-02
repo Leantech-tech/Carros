@@ -344,15 +344,11 @@ class _PerfilPageWidgetState extends State<PerfilPageWidget> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: 4,
+          currentIndex: 2,
           onTap: (index) {
             if (index == 0) {
               context.pushNamed('HomePage');
             } else if (index == 1) {
-              context.pushNamed('OrdemServicoPage');
-            } else if (index == 2) {
-              context.pushNamed('VeiculosPage');
-            } else if (index == 3) {
               context.pushNamed('CarrosPage');
             }
           },
@@ -361,14 +357,6 @@ class _PerfilPageWidgetState extends State<PerfilPageWidget> {
             BottomNavigationBarItem(
               icon: Icon(Icons.dashboard_rounded),
               label: 'Dashboard',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.assignment_rounded),
-              label: 'OS',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.directions_car),
-              label: 'Veículos',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.airport_shuttle),
