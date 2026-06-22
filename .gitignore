@@ -1,3 +1,6 @@
+# Agent/IDE configuration
+.agent/
+
 # Miscellaneous
 *.class
 *.log
