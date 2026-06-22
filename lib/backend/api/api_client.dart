@@ -25,7 +25,13 @@ class ApiClient {
   }
 
   static Uri _buildUri(String path, Map<String, String>? queryParams) {
-    final uri = Uri.parse(kApiBaseUrl + path);
+    String baseUrl = kApiBaseUrl;
+    if (path.startsWith('/auth')) {
+      // Remove o "/api" do final da URL base para rotas de autenticação
+      baseUrl = kApiBaseUrl.replaceAll(RegExp(r'/api$'), '');
+    }
+    
+    final uri = Uri.parse(baseUrl + path);
     if (queryParams != null && queryParams.isNotEmpty) {
       return uri.replace(queryParameters: queryParams);
     }
