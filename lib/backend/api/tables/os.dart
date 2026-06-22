@@ -1,6 +1,6 @@
 import '../database.dart';
 
-class OsTable extends SupabaseTable<OsRow> {
+class OsTable extends ApiTable<OsRow> {
   @override
   String get tableName => 'os';
 
@@ -8,11 +8,11 @@ class OsTable extends SupabaseTable<OsRow> {
   OsRow createRow(Map<String, dynamic> data) => OsRow(data);
 }
 
-class OsRow extends SupabaseDataRow {
+class OsRow extends ApiDataRow {
   OsRow(Map<String, dynamic> data) : super(data);
 
   @override
-  SupabaseTable get table => OsTable();
+  ApiTable get table => OsTable();
 
   String get id => getField<String>('id')!;
   set id(String value) => setField<String>('id', value);

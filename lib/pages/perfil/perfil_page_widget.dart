@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 import 'dart:convert';
-import '/auth/supabase_auth/auth_util.dart';
+import '/auth/api_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';

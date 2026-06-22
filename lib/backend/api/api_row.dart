@@ -1,24 +1,28 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 
-import 'database.dart';
+import '../../flutter_flow/lat_lng.dart';
+import 'api_table.dart';
 
-abstract class SupabaseDataRow {
-  SupabaseDataRow(this.data);
+abstract class ApiDataRow {
+  ApiDataRow(this.data);
 
-  SupabaseTable get table;
+  ApiTable get table;
   Map<String, dynamic> data;
 
   String get tableName => table.tableName;
 
   T? getField<T>(String fieldName, [T? defaultValue]) =>
-      _supaDeserialize<T>(data[fieldName]) ?? defaultValue;
+      _apiDeserialize<T>(data[fieldName]) ?? defaultValue;
+
   void setField<T>(String fieldName, T? value) =>
-      data[fieldName] = supaSerialize<T>(value);
+      data[fieldName] = apiSerialize<T>(value);
+
   List<T> getListField<T>(String fieldName) =>
-      _supaDeserializeList<T>(data[fieldName]) ?? [];
+      _apiDeserializeList<T>(data[fieldName]) ?? [];
+
   void setListField<T>(String fieldName, List<T>? value) =>
-      data[fieldName] = supaSerializeList<T>(value);
+      data[fieldName] = apiSerializeList<T>(value);
 
   @override
   String toString() => '''
@@ -35,10 +39,10 @@ Row Data: {${data.isNotEmpty ? '\n' : ''}${data.entries.map((e) => '  (${e.value
 
   @override
   bool operator ==(Object other) =>
-      other is SupabaseDataRow && mapEquals(other.data, data);
+      other is ApiDataRow && mapEquals(other.data, data);
 }
 
-dynamic supaSerialize<T>(T? value) {
+dynamic apiSerialize<T>(T? value) {
   if (value == null) {
     return null;
   }
@@ -56,10 +60,10 @@ dynamic supaSerialize<T>(T? value) {
   }
 }
 
-List? supaSerializeList<T>(List<T>? value) =>
-    value?.map((v) => supaSerialize<T>(v)).toList();
+List? apiSerializeList<T>(List<T>? value) =>
+    value?.map((v) => apiSerialize<T>(v)).toList();
 
-T? _supaDeserialize<T>(dynamic value) {
+T? _apiDeserialize<T>(dynamic value) {
   if (value == null) {
     return null;
   }
@@ -94,10 +98,30 @@ T? _supaDeserialize<T>(dynamic value) {
   }
 }
 
-List<T>? _supaDeserializeList<T>(dynamic value) => value is List
+List<T>? _apiDeserializeList<T>(dynamic value) => value is List
     ? value
-        .map((v) => _supaDeserialize<T>(v))
+        .map((v) => _apiDeserialize<T>(v))
         .where((v) => v != null)
         .map((v) => v as T)
         .toList()
     : null;
+
+class PostgresTime {
+  PostgresTime(this.time);
+  DateTime? time;
+
+  static PostgresTime? tryParse(String formattedString) {
+    final datePrefix = DateTime.now().toIso8601String().split('T').first;
+    return PostgresTime(
+        DateTime.tryParse('${datePrefix}T$formattedString')?.toLocal());
+  }
+
+  String? toIso8601String() {
+    return time?.toIso8601String().split('T').last;
+  }
+
+  @override
+  String toString() {
+    return toIso8601String() ?? '';
+  }
+}

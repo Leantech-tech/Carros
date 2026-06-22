@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
 
-import '/backend/supabase/supabase.dart';
+import '/backend/api/database.dart';
 
 import '../../flutter_flow/lat_lng.dart';
 import '../../flutter_flow/place.dart';
@@ -72,8 +72,8 @@ String? serializeParam(
       case ParamType.JSON:
         data = json.encode(param);
 
-      case ParamType.SupabaseRow:
-        return json.encode((param as SupabaseDataRow).data);
+      case ParamType.ApiRow:
+        return json.encode((param as ApiDataRow).data);
 
       default:
         data = null;
@@ -151,7 +151,7 @@ enum ParamType {
   FFUploadedFile,
   JSON,
 
-  SupabaseRow,
+  ApiRow,
 }
 
 dynamic deserializeParam<T>(
@@ -203,11 +203,15 @@ dynamic deserializeParam<T>(
       case ParamType.JSON:
         return json.decode(param);
 
-      case ParamType.SupabaseRow:
+      case ParamType.ApiRow:
         final data = json.decode(param) as Map<String, dynamic>;
         switch (T) {
+          case CarroRow:
+            return CarroRow(data);
           case VeiculoRow:
             return VeiculoRow(data);
+          case OsRow:
+            return OsRow(data);
           default:
             return null;
         }

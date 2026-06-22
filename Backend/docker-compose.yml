@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: backend-carros
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      DB_HOST: 72.62.104.110
+      DB_PORT: 5430
+      DB_NAME: carros
+      DB_USER: postgres
+      DB_PASSWORD: e918a82fc0441990126fdaa85c5148c2
+      DB_MAX_CONNECTIONS: 20
+      NODE_ENV: production
+      JWT_SECRET: e918a82fc0441990126fdaa85c5148c2-carros-jwt
+      JWT_EXPIRES_IN: 7d
+    networks:
+      - carros-network
+
+networks:
+  carros-network:
+    driver: bridge

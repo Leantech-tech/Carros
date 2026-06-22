@@ -1,6 +1,6 @@
 import '../database.dart';
 
-class VeiculoTable extends SupabaseTable<VeiculoRow> {
+class VeiculoTable extends ApiTable<VeiculoRow> {
   @override
   String get tableName => 'veiculo';
 
@@ -8,11 +8,11 @@ class VeiculoTable extends SupabaseTable<VeiculoRow> {
   VeiculoRow createRow(Map<String, dynamic> data) => VeiculoRow(data);
 }
 
-class VeiculoRow extends SupabaseDataRow {
+class VeiculoRow extends ApiDataRow {
   VeiculoRow(Map<String, dynamic> data) : super(data);
 
   @override
-  SupabaseTable get table => VeiculoTable();
+  ApiTable get table => VeiculoTable();
 
   String get id => getField<String>('id')!;
   set id(String value) => setField<String>('id', value);

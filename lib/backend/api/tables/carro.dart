@@ -1,6 +1,6 @@
 import '../database.dart';
 
-class CarroTable extends SupabaseTable<CarroRow> {
+class CarroTable extends ApiTable<CarroRow> {
   @override
   String get tableName => 'carros';
 
@@ -8,11 +8,11 @@ class CarroTable extends SupabaseTable<CarroRow> {
   CarroRow createRow(Map<String, dynamic> data) => CarroRow(data);
 }
 
-class CarroRow extends SupabaseDataRow {
+class CarroRow extends ApiDataRow {
   CarroRow(Map<String, dynamic> data) : super(data);
 
   @override
-  SupabaseTable get table => CarroTable();
+  ApiTable get table => CarroTable();
 
   String get id => getField<String>('id') ?? '';
   set id(String value) => setField<String>('id', value);
@@ -31,5 +31,4 @@ class CarroRow extends SupabaseDataRow {
 
   String? get contato => getField<String>('contato');
   set contato(String? value) => setField<String>('contato', value);
-
 }

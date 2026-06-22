@@ -5,10 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 
-import 'auth/supabase_auth/supabase_user_provider.dart';
-import 'auth/supabase_auth/auth_util.dart';
+import 'auth/api_auth/auth_util.dart';
 
-import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/nav/nav.dart';
@@ -18,7 +16,7 @@ void main() async {
   GoRouter.optionURLReflectsImperativeAPIs = true;
   // usePathUrlStrategy();
 
-  await SupaFlow.initialize();
+  await initializeAuth();
   await FlutterFlowTheme.initialize();
 
   final appState = FFAppState();
@@ -65,7 +63,7 @@ class _MyAppState extends State<MyApp> {
 
     _appStateNotifier = AppStateNotifier.instance;
     _router = createRouter(_appStateNotifier);
-    userStream = carrosSupabaseUserStream()
+    userStream = carrosApiUserStream()
       ..listen((user) {
         _appStateNotifier.update(user);
       });

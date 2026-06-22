@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 
-import '/backend/supabase/supabase.dart';
+import '/backend/api/database.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
@@ -123,7 +123,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => CarroCadastroPageWidget(
             carro: params.getParam<CarroRow>(
               'carro',
-              ParamType.SupabaseRow,
+              ParamType.ApiRow,
             ),
           ),
         ),
