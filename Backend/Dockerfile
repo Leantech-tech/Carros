@@ -12,7 +12,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Instala dependências de produção
-RUN npm ci --only=production && npm cache clean --force
+RUN npm install --omit=dev && npm cache clean --force
 
 # Estágio 2: Imagem final enxuta
 FROM node:20-alpine
