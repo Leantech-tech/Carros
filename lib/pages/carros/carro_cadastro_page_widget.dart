@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'carro_cadastro_page_model.dart';
 export 'carro_cadastro_page_model.dart';
 
@@ -120,7 +121,7 @@ class _CarroCadastroPageWidgetState extends State<CarroCadastroPageWidget> {
                             await CarroTable().update(
                               data: {
                                 'nome': nomeCompleto,
-                                'data': (_model.selectedDate ?? DateTime.now()).toUtc().toIso8601String(),
+                                'data': DateFormat('yyyy-MM-dd').format(_model.selectedDate ?? DateTime.now()),
                                 'historico': _model.descricaoController!.text,
                                 'contato': _model.contatoController!.text,
                               },
@@ -131,9 +132,9 @@ class _CarroCadastroPageWidgetState extends State<CarroCadastroPageWidget> {
                             final nomeCompleto = _model.placaController!.text.isNotEmpty
                                 ? '${_model.nomeController!.text} ${_model.placaController!.text}'
                                 : _model.nomeController!.text;
-                            await CarroTable().insert({
+                             await CarroTable().insert({
                               'nome': nomeCompleto,
-                              'data': (_model.selectedDate ?? DateTime.now()).toUtc().toIso8601String(),
+                              'data': DateFormat('yyyy-MM-dd').format(_model.selectedDate ?? DateTime.now()),
                               'historico': _model.descricaoController!.text,
                               'contato': _model.contatoController!.text,
                             });
@@ -334,6 +335,7 @@ class _CarroCadastroPageWidgetState extends State<CarroCadastroPageWidget> {
     required FocusNode? focusNode,
     required String hint,
     int maxLines = 1,
+    List<TextInputFormatter>? inputFormatters,
   }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -353,6 +355,7 @@ class _CarroCadastroPageWidgetState extends State<CarroCadastroPageWidget> {
           autofocus: false,
           obscureText: false,
           maxLines: maxLines,
+          inputFormatters: inputFormatters,
           style: FlutterFlowTheme.of(context).bodyLarge.override(
                 fontFamily: 'Inter',
                 letterSpacing: 0.0,

@@ -80,7 +80,24 @@ T? _apiDeserialize<T>(dynamic value) {
       }
       return (value as num).toDouble() as T?;
     case DateTime:
-      return DateTime.tryParse(value as String)?.toLocal() as T?;
+      final str = value as String;
+      final parsed = DateTime.tryParse(str);
+      if (parsed == null) return null;
+      if (!str.contains('T') && !str.contains(':')) {
+        final parts = str.split('-');
+        if (parts.length == 3) {
+          final y = int.tryParse(parts[0]);
+          final m = int.tryParse(parts[1]);
+          final d = int.tryParse(parts[2]);
+          if (y != null && m != null && d != null) {
+            return DateTime(y, m, d) as T?;
+          }
+        }
+      }
+      if (parsed.isUtc && parsed.hour == 0 && parsed.minute == 0 && parsed.second == 0 && parsed.millisecond == 0) {
+        return DateTime(parsed.year, parsed.month, parsed.day) as T?;
+      }
+      return parsed.toLocal() as T?;
     case PostgresTime:
       return PostgresTime.tryParse(value as String) as T?;
     case LatLng:
